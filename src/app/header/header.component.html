@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-content" style="max-width:100%">
+
+  <!-- Header -->
+      <div class="topnav" id="myTopnav" [ngClass]="{'responsive' : statusMenu}" >
+          <a *ngIf="innerWidth">{{strMenuAct}}</a>
+          <a [routerLink]="['/about']" [ngClass]="{'active' :  statusMenuShop}" (click)="selectMenu()">Shop</a>
+          <a [routerLink]="['/sneakers']" [ngClass]="{'active' :  statusMenuSneakers}" (click)="selectMenu()">Sneakers</a>
+          <a [routerLink]="['/bag']" [ngClass]="{'active' :  statusMenuBag}" (click)="selectMenu()">Bag</a>
+          <a [routerLink]="['/shirts']" [ngClass]="{'active' :  statusMenuShirts}" (click)="selectMenu()">Shirts</a>
+          <a [routerLink]="['/arttoy']" [ngClass]="{'active' :  statusMenuArtToy}" (click)="selectMenu()">Art Toy</a>
+          <a href="javascript:void(0);" class="icon" (click)="selectMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+  <!-- Image header -->
+
+</div>
+
+

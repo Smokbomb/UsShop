@@ -1,0 +1,12 @@
+
+
+<div >
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"  ></ngx-gallery>  
+
+</div>
+<div class = "content" style="float: left;" >  
+<div class = "content-text" *ngIf = "contentInfo"  >
+           {{contentInfo.name}} <br/>  {{contentInfo.content}}<br/>{{contentInfo.price}}
+</div>
+
+</div>

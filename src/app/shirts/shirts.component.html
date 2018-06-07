@@ -1,0 +1,27 @@
+<div class="warpper">
+    <div class="shop-content">
+      <div>
+        
+    
+        <div class="card card-block card-header card-thumb">
+    
+    
+          <div class="well well-lg carousel-thumb" *ngFor="let listShirt of shirtList; let i= index"  >
+            <div  >
+              <carousel>
+                <slide *ngFor="let list of listShirt.image;">
+                  <img src="{{list}}" alt="first slide" style="display: block; width: 100%;" (click)="nextToContent('shirts',i)" >
+                </slide>
+              </carousel>
+            </div>
+            <span>{{listShirt.name }}</span><br>
+            <span>{{listShirt.price}}</span>
+          </div>
+    
+        </div>
+    
+      
+    
+      </div>
+    </div>
+    </div>

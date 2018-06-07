@@ -1,0 +1,8 @@
+.well.well-lg {
+    width: 300px;
+    /* float: left; */
+    /* margin: 16px 8px 16px 16px ; */
+  }
+  .card-thumb{ text-align: center;}
+  .card-thumb .carousel-thumb{ text-align: center; margin: 8px 1%; display: inline-block; vertical-align: top;}
+  
